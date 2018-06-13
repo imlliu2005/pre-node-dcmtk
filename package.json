@@ -1,0 +1,24 @@
+{
+  "name": "@cc/node-dcmtk",
+  "version": "1.0.11",
+  "description": "dcmtk node binding",
+  "main": "index.js",
+  "scripts": {
+    "install": "prebuild --install",
+    "test": "node test.js",
+    "build": "node-gyp rebuild",
+    "prebuild": "prebuild -all --strip --verbose",
+    "upload" : "prebuild -u 2d97b5f7c0537bea13f951f14162c81506005825"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imlliu2005/prebuild-node-dcmtk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.10.0",
+    "prebuild": "^7.6.0"
+  },
+  "gypfile": true
+}
